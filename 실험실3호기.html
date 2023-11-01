@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지 도안</title>
+<style>
+    html,body { margin: 0; padding: 0; height: 100%; background: #f0f0f0; } /* 전체 배경 색상 지정 */
+    header {width: 100%; height: 16%; background: aquamarine; }
+    nav {width: 100%; height: 4%; float: center; background: yellowgreen; }
+    section { width: 70%; height: 80%; float: left; background: olivedrab; }
+    article { width: 30%; height: 40%; float: right; background: palegreen;}
+    table { height: 100%; }
+    #menubar {
+        background: olive;
+    }
+    #menubar ul {
+        margin: 0;
+        padding: 0;
+        width: 567px;
+    }
+    #menubar ul li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0px 15px;
+    }
+    #menubar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    #menubar ul li a:hover {
+        color: violet;
+    }
+</style>
+</head>
+<body>
+    <header><table align="center">
+        <td><img src="img/LOGOO.png">
+    </table></header>
+    <nav id="menubar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Member</a></li>
+            <li><a href="#">DownLoad</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h3>캠핑동호회에 오신걸 환영합니다.</h3><br>
+        <form>
+            <fieldset>
+                <legend>로그인</legend>
+            이름 : <input type="text" value=""><br>
+            암호 : <input type="password" value="" maxlength="4"><br>
+            <input type="submit" value="로그인">
+            <button type="reset">리셋</button><br>
+        </fieldset>
+        </form>
+    </article>
+    <section>
+        <h1>수업내용</h1><br>
+        <a href="9월6일3교시.html">9월6일3교시 실습</a> <br>
+        <a href="9월6일3교시2.html">9월6일3교시 실습2-블럭태그/인라인태그</a> <br>
+        <a href="9월13일.html">9월13일 실습 홈페이지 제작</a><br>
+        <a href="9월20일.html">9월20일 실습 홈페이지 제작</a><br>
+        <a href="10월11일.html">박스모델</a><br>
+        <a href="10월11일2교시.html">텍스트 그림자</a><br>
+        <a href="10월11일3교시.html">relative 배치</a><br>
+        <a href="10월11일4교시.html">리스트로 메뉴 만들기</a><br>
+    </section>
+    <article><h2>Camping</h2><br><h4>야외에서 숙식을 해결하는 행위. 야영이라고도 한다 군대에서는 숙영이라고한다.
+        숙박 시설이 없는 외지나 산악 지대 등에서 불가피하게 야영하는 경우 (비박)도 있겠으나.
+        하나의 레저로 즐기는 경우가 많다. 대한민국에서도 많은 사람이 캠핑을 즐기며 산이건
+        바다건 캠핑장이 하나씩은 꼭 있는 것을 볼 수 있다.
+    </h4></article>
+</body>
+</html>
