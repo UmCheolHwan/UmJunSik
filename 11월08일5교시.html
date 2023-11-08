@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>내가 좋아하는 것</p>
+
+<select>
+    <option style="background-image:url(img/탕수육.png);">탕수육</option>
+    <option style="background-image:url(img/짜장면.png);">짜장면</option>
+    <option style="background-image:url(img/짬뽕.png);">짬뽕</option>
+</select> 
+
+<p> 내가 좋아하는 음식에 대해 말해보기 </p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>
+

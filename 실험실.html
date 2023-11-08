@@ -10,28 +10,34 @@
     body {
         background: url('img/wallpaper.jpg') no-repeat center center fixed;
         background-size: cover;
+        color: white;
     }
     header {width: 100%; height: 15%; background-color: transparent; }
     nav {width: 100%; height: 10%; float: left; background-color: transparent; }
-    section { width: 70%; height: 75%; float: left; background-color: transparent; }
-    article { width: 30%; height: 40%; float: right; background-color: transparent; }
+    section { width: 60%; height: 75%; float: left; background-color: transparent; }
+    article { width: 40%; height: 40%; float: right; background-color: transparent; }
     aside { width: 70%; height: 5%; float: left; background-color: transparent; }
     table { height: 100%; }
+    .search-bar {
+        padding: 5px;
+        background: white; 
+        border: 2px solid green; 
+        color: black; 
+        width: 50%; 
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
 </style>
 </head>
 <body>
     <header><table align="center">
-        <td><img src="img/Home.png"><a href="index1.html"></a></td>
-        <td><img src="img/Outline.png"></td>
-        <td><img src="img/Media.png"></td>
-        <td><img src="img/Download.png"></td>
+        <td><img src="img/LOGOO-removebg-preview.png"><a href="index.html"></a></td>
     </table></header>
     <nav><table align="center">
         <td><img src="img/Part1.png"></td>
         <td><img src="img/Part2.png"></td>
         <td><img src="img/Part3.png"></td>
     </table></nav>
-    <aside>aside</aside>
     <article>
         <h1>캠핑동호회에 오신걸 환영합니다.</h1><br>
         <form>
@@ -46,19 +52,15 @@
         </form>
     </article>
     <section>
-        <h1>수업내용</h1><br>
-        <a href="9월6일3교시.html">9월6일3교시 실습</a> <br>
-        <a href="9월6일3교시2.html">9월6일3교시 실습2-블럭태그/인라인태그</a> <br>
-        <a href="9월13일.html">9월13일 실습 홈페이지 제작</a><br>
-        <a href="9월20일.html">9월20일 실습 홈페이지 제작</a><br>
+        <input type="text" class="search-bar" placeholder="검색어를 입력하세요">
     </section>
     <article>
-        <h3>Camping</h3><br>
-        <h4>야외에서 숙식을 해결하는 행위. 야영이라고도 한다 군대에서는 숙영이라고한다.
-            숙박 시설이 없는 외지나 산악 지대 등에서 불가피하게 야영하는 경우 (비박)도 있겠으나.
-            하나의 레저로 즐기는 경우가 많다. 대한민국에서도 많은 사람이 캠핑을 즐기며 산이건
-            바다건 캠핑장이 하나씩은 꼭 있는 것을 볼 수 있다.
-        </h4>
+        <h1>Camping</h1><br>
+        <h3>야외에서 숙식을 해결하는 행위. 야영이라고도 한다 군대에서는 숙영이라고한다.<br>
+            숙박 시설이 없는 외지나 산악 지대 등에서 불가피하게 야영하는 경우 (비박)도 있겠으나.<br>
+            하나의 레저로 즐기는 경우가 많다. 대한민국에서도 많은 사람이 캠핑을 즐기며 산이건<br>
+            바다건 캠핑장이 하나씩은 꼭 있는 것을 볼 수 있다.<br>
+        </h3>
     </article>
 </body>
 </html>
