@@ -13,7 +13,7 @@
             padding: 0;
             background: url('img/wallpaper.jpg') no-repeat center center fixed;
             background-size: cover;
-            font-family: 'Yeongdeok Snow Crab', sans-serif; /* 새로 추가된 폰트 설정 */
+            font-family: 'Yeongdeok Snow Crab', sans-serif;
             color: white;
         }
 
@@ -46,6 +46,15 @@
         h1, h2, p {
             margin-bottom: 20px;
         }
+
+        /* 이미지에 마우스 호버 시 줌인 효과 */
+        .zoomable-image {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .zoomable-image:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 
@@ -64,8 +73,11 @@
         <h2>회원 가입</h2>
         <p>우리 동호회에 가입하고 싶다면 언제든지 홈페이지를 방문하여 간단한 정보를 입력하여 가입할 수 있습니다. 함께 자연 속에서 행복한 순간을 만들어봐요!</p>
 
-        
-
+        <!-- 이미지를 감싸는 컨테이너 -->
+        <div style="display: flex; justify-content: space-between;">
+            <img class="zoomable-image" src="img/캠핑이미지.jpg" alt="Camping Image" style="width: 48%; border-radius: 10px;">
+            <img class="zoomable-image" src="img/캠핑이미지2.jpg" alt="Camping Image" style="width: 48%; border-radius: 10px;">
+        </div>
     </section>
 </body>
 
