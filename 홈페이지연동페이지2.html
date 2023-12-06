@@ -13,7 +13,7 @@
             padding: 0;
             background: url('img/wallpaper.jpg') no-repeat center center fixed;
             background-size: cover;
-            font-family: 'Yeongdeok Snow Crab', sans-serif;
+            font-family: 'omyu', sans-serif;
             color: white;
         }
 
@@ -55,6 +55,44 @@
         .zoomable-image:hover {
             transform: scale(1.2);
         }
+
+        /* 모달 스타일 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* 닫기 버튼 스타일 */
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* 이미지를 감싸는 컨테이너 */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
     </style>
 </head>
 
@@ -74,11 +112,42 @@
         <p>우리 동호회에 가입하고 싶다면 언제든지 홈페이지를 방문하여 간단한 정보를 입력하여 가입할 수 있습니다. 함께 자연 속에서 행복한 순간을 만들어봐요!</p>
 
         <!-- 이미지를 감싸는 컨테이너 -->
-        <div style="display: flex; justify-content: space-between;">
-            <img class="zoomable-image" src="img/캠핑이미지.jpg" alt="Camping Image" style="width: 48%; border-radius: 10px;">
-            <img class="zoomable-image" src="img/캠핑이미지2.jpg" alt="Camping Image" style="width: 48%; border-radius: 10px;">
+        <div class="image-container">
+            <img class="zoomable-image" src="img/캠핑이미지.jpg" alt="Camping Image" style="width: 48%; border-radius: 10px;" onclick="openModal('img/캠핑이미지.jpg')">
+            <img class="zoomable-image" src="img/캠핑이미지2.jpg" alt="Camping Image" style="width: 48%; border-radius: 10px;" onclick="openModal('img/캠핑이미지2.jpg')">
         </div>
+
+        <!-- 모달 -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
     </section>
+
+    <!-- 스크립트 추가 -->
+    <script>
+        function openModal(imgSrc) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImg");
+
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        // 모달 바깥 부분 클릭 시 모달 닫기
+        window.onclick = function (event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 </body>
 
 </html>
